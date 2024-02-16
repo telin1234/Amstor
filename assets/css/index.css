@@ -30,6 +30,7 @@ nav a{
     align-items: center;
 }
 .sidebar{
+    display: none;
     position: fixed;
     top: 0;
     right: 60rem;
@@ -430,6 +431,9 @@ br{
     body{
         overflow-x: hidden;
     }
+    .sidebar{
+        display: block;
+    }
 
     .hideonmobile{
         display: none;
@@ -536,6 +540,9 @@ br{
 @media only screen and (max-width:500px){
     body{
         overflow-x: hidden;
+    }
+    .sidebar{
+        display: block;
     }
     .hideonmobile{
         display: none;   
