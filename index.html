@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
     <header>
@@ -44,29 +48,81 @@
             </div>
         </nav>
     </header>
-    <section class="section">
-        <div class="sec-flex">
-            <div class="sec-div">
-                <h1 class="sec-h1">Healthcare<br> Management Systems<br> for a connected future </h1>
-                <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
-                <div class="book">
-                    <a href="#" class="br1">Download Brochure</a>
-                    <a href="#" class="br1">Book a Demo</a>
-                </div>
-                <div class="sec-div2">
-                    <p>Regional Compliance & International Standards</p>
-                    <div class="sec-flex2">
-                        <img src="assets/img/Frame 778.svg" alt="">
-                        <img src="assets/img/hl7-cert 1.svg" alt="">
-                        <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                        <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                        <img src="assets/img/riayati.svg" alt="">
+    
+    <section class="owl-carousel">
+        <div class="item">
+            <div class="sec-flex">
+                <div class="sec-div">
+                    <h1 class="sec-h1">Healthcare Management Systems for a connected future </h1>
+                    <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
+                    <div class="book">
+                        <a href="#" class="br1">Download Brochure</a>
+                        <a href="#" class="br1">Book a Demo</a>
+                    </div>
+                    <div class="sec-div2">
+                        <p>Regional Compliance & International Standards</p>
+                        <div class="sec-flex2">
+                            <img src="assets/img/Frame 778.svg" alt="">
+                            <img src="assets/img/hl7-cert 1.svg" alt="">
+                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
+                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
+                            <img src="assets/img/riayati.svg" alt="">
+                        </div>
                     </div>
                 </div>
+                <img src="assets/img/Frame 741.svg" class="sec-img">
             </div>
-            <img src="assets/img/Frame 741.svg" class="sec-img" >
+        </div>
+
+        <div class="item">
+            <div class="sec-flex">
+                <div class="sec-div">
+                    <h1 class="sec-h1" style="font-size: 2rem;">Our softwares adheres to Regional Compliances & International Standards </h1>
+                    <p class="p"> Integration with regional satutory compliances and international healthcare standards Like MALAFI, NABIDH, RIAYATI, HL7 etc...</p>
+                    <div class="book">
+                        <a href="#" class="br1">Download Brochure</a>
+                        <a href="#" class="br1">Book a Demo</a>
+                    </div>
+                    <div class="sec-div2">
+                        <p>Regional Compliance & International Standards</p>
+                        <div class="sec-flex2">
+                            <img src="assets/img/Frame 778.svg" alt="">
+                            <img src="assets/img/hl7-cert 1.svg" alt="">
+                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
+                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
+                            <img src="assets/img/riayati.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/adult-business-detail-push-search png 1.png" class="sec-img">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="sec-flex">
+                <div class="sec-div">
+                    <h1 class="sec-h1">Seamless integration of LIMS and PACS system </h1>
+                    <p class="p">Seamless integration of LIMS and PACS system for quick image access and auto reporting of Lab tests. </p>
+                    <div class="book">
+                        <a href="#" class="br1">Download Brochure</a>
+                        <a href="#" class="br1">Book a Demo</a>
+                    </div>
+                    <div class="sec-div2">
+                        <p>Regional Compliance & International Standards</p>
+                        <div class="sec-flex2">
+                            <img src="assets/img/Frame 778.svg" alt="">
+                            <img src="assets/img/hl7-cert 1.svg" alt="">
+                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
+                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
+                            <img src="assets/img/riayati.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/business girl 1.png" class="sec-img">
+            </div>
         </div>
     </section>
+            
     <section class="hero4">
         <div id="hero4" class="tt2">
             <div >
@@ -308,6 +364,26 @@
             sidebar.style.display = 'none'
 
         }
+
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        });
+    </script>
 
 
     </script>

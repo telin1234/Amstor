@@ -103,12 +103,21 @@ br{
     position: relative;
     margin: 6rem 4rem;
     /* padding: 0 15rem; */
+
 }
+.slide-section {
+    transition: transform 0.3s ease; 
+}
+
+.slide-section:hover {
+    transform: translateX(rem); 
+}
+
 
 .sec-div2{
     background-color: #FFFFFFA6;
     border-radius: .5rem;
-    padding: 1rem 1rem ;
+    padding: 1rem 20rem ;
     margin-top: 2.5rem;
     position: absolute;
     top: 85%;
@@ -117,6 +126,7 @@ br{
     z-index: 2; /* Add this line */
     
 }
+
 .sec-img{
     /* width:10rem; */
     position: relative;
@@ -291,6 +301,13 @@ br{
     border-radius: 14px;
     color: white;
 }
+.choose10 li {
+    transition: background-color 0.3s ease; 
+}
+
+.choose10 li:hover {
+    background-color: orangered; 
+}
 .choose9{
     padding: 10px 35px;
     background-color: #102057;
@@ -414,6 +431,15 @@ br{
     gap: 23px;
     justify-content: center;
 }
+#slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
 
 
 
