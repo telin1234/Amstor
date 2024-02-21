@@ -16,100 +16,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
-    <section class="owl-carousel">
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1">Healthcare<br> Management Systems<br> for a connected future </h1>
-                    <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
+
+<section>
+    <div>
+        <div class="service">
+            <div class="owl-carousel">
+                <div class="item">
+                    <img src="assets/img/home page - pexels-pavel-danilyuk-7675014.jpg" alt="" width="1500px" height="700px">
                 </div>
-                <img src="assets/img/Frame 741.svg" class="sec-img">
+            </div>
+            <div class="service_1">
+                <h3>Our services</h3>
+                <p class="service_3">“Amstor LeHealth” offers a highly customizable EMR solution with advanced integration facility to provide seamless integrations <br> with Patient Web Portal, 3rd party accounting management/ERP system, Lab machine interfacing and PACS systems.</p>
+            </div>
+            <div class="service_2">
+                <div class="service_4">
+                    <h2>Product customization</h2>
+                    <p>LeHealth Software extends immense capability and flexibility to scale up the product features based on the regional requirements and customer specific requirements to match the specific workflow and business rules.</p>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1">Healthcare<br> Management Systems<br> for a connected future </h1>
-                    <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/img/adult-business-detail-push-search png 1.png" class="sec-img">
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1">Healthcare<br> Management Systems<br> for a connected future </h1>
-                    <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/img/business girl 1.png" class="sec-img">
-            </div>
-        </div>
-     
-    </section>
-
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
                 }
-            });
+            }
         });
-    </script>
+    });
+</script>
+
 </body>
 </html>
