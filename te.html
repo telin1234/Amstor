@@ -14,54 +14,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .annmariya7, .annmariya8 {
+            display: none; /* Initially hide both divs */
+        }
+    </style>
 </head>
 <body>
-
-<section>
-    <div>
-        <div class="service">
-            <div class="owl-carousel">
+  <section>
+    <div class="hr">
+        <div class="sport">
+            <div class="ann10">
+                <div class="ann8">
+                    <a href="#" class="ann5" onclick="toggleVisibility('.annmariya7');">Lehealth Enterprise</a>
+                    <a href="#" class="ann5" onclick="toggleVisibility('.annmariya8');">Lehealth Dental</a>
+                    <!-- Add similar links for other sections if needed -->
+                </div>
+            </div>
+            <div class="annmariya7">
+                <!-- Content for Lehealth Enterprise -->
                 <div class="item">
-                    <img src="assets/img/home page - pexels-pavel-danilyuk-7675014.jpg" alt="" width="1500px" height="700px">
+                    <div class="ann10">
+                        <div class="ann8">
+                            <a href="#" class="ann5"> Lehealth Enterprise</a>
+                            <a href="#" class="ann5"> Lehealth Dental</a>
+                            <a href="#" class="ann5"> Lehealth Labrise</a>
+                            <a href="#" class="ann5"> Lehealth Derma & Aesthetics</a>
+                            <a href="#" class="ann5"> Lehealth Day Surgical Center</a>
+                        </div>
+                    </div>
+                    <div class="annmariya">
+                        <img class="tt6" src="assets/img/home page - dental.jpg" alt="" width="1500px" height="900px">
+                    </div>
+                    <div class="ann11">
+                        <h3>LeHealth Dental</h3>
+                        <p>LeHealth Dental Provides a complete operations management solution for <br> small, medium and large level Dental Clinics. The Centralized architecture <br> of the software allows dental care enterprises to handle single or multichain <br> facilities easy and effective.</p>
+                        <a class="ann12" href="">Explore</a>
+                    </div>
                 </div>
-            </div>
-            <div class="service_1">
-                <h3>Our services</h3>
-                <p class="service_3">“Amstor LeHealth” offers a highly customizable EMR solution with advanced integration facility to provide seamless integrations <br> with Patient Web Portal, 3rd party accounting management/ERP system, Lab machine interfacing and PACS systems.</p>
-            </div>
-            <div class="service_2">
-                <div class="service_4">
-                    <h2>Product customization</h2>
-                    <p>LeHealth Software extends immense capability and flexibility to scale up the product features based on the regional requirements and customer specific requirements to match the specific workflow and business rules.</p>
+            </div>   
+            <div class="annmariya8">
+                <!-- Content for Lehealth Dental -->
+                <div class="item">
+                    <div class="ann10">
+                        <div class="ann8">
+                            <a href="#" class="ann5"> Lehealth Enterprise</a>
+                            <a href="#" class="ann5"> Lehealth Dental</a>
+                            <a href="#" class="ann5"> Lehealth Labrise</a>
+                            <a href="#" class="ann5"> Lehealth Derma & Aesthetics</a>
+                            <a href="#" class="ann5"> Lehealth Day Surgical Center</a>
+                        </div>
+                    </div>
+                    <div class="annmariya">
+                        <img class="tt6" src="assets/img/home page - dental.jpg" alt="" width="1500px" height="900px">
+                    </div>
+                    <div class="ann11">
+                        <h3>LeHealth Dental</h3>
+                        <p>LeHealth Dental Provides a complete operations management solution for <br> small, medium and large level Dental Clinics. The Centralized architecture <br> of the software allows dental care enterprises to handle single or multichain <br> facilities easy and effective.</p>
+                        <a class="ann12" href="">Explore</a>
+                    </div>
                 </div>
-            </div>
+            </div>  
+            <!-- Add similar divs for other sections if needed -->
         </div>
-    </div>
-</section>
+    </div> 
+  </section>
 
-<script>
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:5000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
+  <script>
+    function toggleVisibility(className) {
+        var elements = document.querySelectorAll(className);
+        elements.forEach(function(element) {
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
             }
         });
-    });
-</script>
-
+    }
+  </script>
 </body>
 </html>
