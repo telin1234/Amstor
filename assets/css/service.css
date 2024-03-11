@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-size: 'arimo',sans-serif;
 
 }
 
@@ -36,6 +37,7 @@
     margin-left: 30px;
     display: grid;
 }
+
 .dream7{
     text-align: justify;
     margin-left: 45rem;
@@ -189,6 +191,12 @@ service page */
     }
     .dree{
         margin-left: -14rem;
+    }
+    .dream3{
+        width: auto;
+    }
+    .dream4{
+        width: auto;
     }
   
     

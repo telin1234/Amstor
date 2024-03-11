@@ -10,11 +10,11 @@
     <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
 <body>
     <header>
         <nav class="nav_1">
@@ -47,92 +47,104 @@
                     
             </div>
         </nav>
+        <script>
+            function showsidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+    
+            }
+    
+    
+        </script>
     </header>
     
-    <section class="owl-carousel">
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1">Healthcare Management Systems for a connected future </h1>
-                    <p class="p">“LeHealth” a specialised state of the art Healthcare Information<br> Management Software for transforming healthcare facilities into fully<br> automized digital environment.</p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/img/Frame 741.svg" class="sec-img">
+    <section class="main-sec section-overlay">
+        <div class="heading">
+            <div>
+                <h1 class="gradient-text sec-h1">Healthcare <br> management systems <br> for a connected future</h1>
+                <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
+            </div>
+            <div class="bt">
+                <a href="#" class="bt1">Download Brochure</a>   
+                <a href="#" class="bt1">Book a demo</a>
             </div>
         </div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1" style="font-size: 2rem;">Our softwares adheres to Regional Compliances & International Standards </h1>
-                    <p class="p"> Integration with regional satutory compliances and international healthcare standards Like MALAFI, NABIDH, RIAYATI, HL7 etc...</p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/img/adult-business-detail-push-search png 1.png" class="sec-img">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
-        </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/Frame 741.svg" alt="Los Angeles" class="d-block" >
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/business girl 1.png" alt="Chicago" class="d-block" >
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/adult-business-detail-push-search png 1.png" alt="New York" class="d-block" >
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
+        
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide-container');
+        
+            function showSlide(n) {
+                slides[currentSlide].style.display = 'none';
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].style.display = 'block';
+            }
+        
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+        
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+            setInterval(nextSlide, 3000);
+        </script>
+    </section>
 
-        <div class="item">
-            <div class="sec-flex">
-                <div class="sec-div">
-                    <h1 class="sec-h1">Seamless integration of LIMS and PACS system </h1>
-                    <p class="p">Seamless integration of LIMS and PACS system for quick image access and auto reporting of Lab tests. </p>
-                    <div class="book">
-                        <a href="#" class="br1">Download Brochure</a>
-                        <a href="#" class="br1">Book a Demo</a>
-                    </div>
-                    <div class="sec-div2">
-                        <p>Regional Compliance & International Standards</p>
-                        <div class="sec-flex2">
-                            <img src="assets/img/Frame 778.svg" alt="">
-                            <img src="assets/img/hl7-cert 1.svg" alt="">
-                            <img src="assets/img/malaffi-logo-vector.svg" alt="">
-                            <img src="assets/img/NABIDH-500-x-325 1.svg" alt="">
-                            <img src="assets/img/riayati.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="assets/img/business girl 1.png" class="sec-img">
-            </div>
+    <section class="sec2">
+        <p class="mar">Regional Compliances and International Standards</p>
+        <div class="section2">
+            <img src="./assets/img/NABIDH-500-x-325 1.svg" class="sec-img">
+            <img src="./assets/img/riayati.svg" class="sec-img">
+            <img src="./assets/img/malaffi-logo-vector.svg" class="sec-img">
+            <img src="./assets/img/Frame 778.svg" class="sec-img">
+            <img src="./assets/img/hl7-cert 1.svg" class="sec-img">
         </div>
     </section>
-            
     <section class="hero4">
         <div id="hero4" class="tt2">
             <div >
-                <img id="gggg" src="assets/img/pic.png" alt="" height="500px" >
+                <img id="gggg" src="./assets/img/pic.png" alt="" height="500px" >
             </div>
              <div> 
             <div class="ann">
                 <div class="ann2">
                 <h3>About our company</h3>
-                <img src="assets/img/" alt="">
+                <img src="./img/Rectangle 8.png" alt="">
                 </div>  
                 <div class="tt5">  
                 <h2>We’re delivering the best <br> customer experience</h2>
@@ -149,75 +161,75 @@
                 LeHealth provides a complete operations management solution for small, medium & large level Poly clinics, Medical centers, Medical Laboratories & Diagnostic Centres. The centralized architecture of the software allows healthcare management team to handle single or multi-chain facility easy and effective.</p>
             <a class="annnn" href="#">Explore</a>
         </div>
-    </section>
     <section>
-         <div class="owl-carousel 1">
-            <div class="item">
-                <div class="ann10">
-                    <div class="ann8">
-                        <a href="#" class="ann5"> Lehealth Enterprise</a>
-                        <a href="#" class="ann5"> Lehealth Dental</a>
-                        <a href="#" class="ann5"> Lehealth Labrise</a>
-                        <a href="#" class="ann5"> Lehealth Derma & Aesthetics</a>
-                        <a href="#" class="ann5"> Lehealth Day Surgical Center</a>
-                    </div>
+        <div class="ann6">
+            <div class="ann7">
+                <div class="ann8">
+                    <a href="#" class="ann5" data-target="tt6">Lehealth Enterprise</a>
+                    <a href="#" class="ann5" data-target="tt7">Lehealth Dental</a>
+                    <a href="#" class="ann5" data-target="tt8">Lehealth Labrise</a>
+                    <a href="#" class="ann5" data-target="tt9">Lehealth Derma & Aesthetics</a>
+                    <a href="#" class="ann5" data-target="tt10">Lehealth Day Surgical Center</a>
                 </div>
+            </div>
+            <div class="ann10">
                 <div class="annmariya">
-                    <img class="tt6" src="assets/img/home page - dental.jpg" alt="" width="1500px" height="900px">
+                    <img id="tt6" class="tt" src="./assets/img/Frame 865.png" alt="" width="1500px" height="900px">
+                    <img id="tt7" class="tt" src="./assets/img/Frame 761 (1).png" alt="" width="1500px" height="900px">
+                    <img id="tt10" class="tt" src="./assets/img/Frame 863.png" alt="" width="1500px" height="900px">
                 </div>
-                <div class="ann11">
+                <div class="ann11" id="ann11">
                     <h3>LeHealth Dental</h3>
                     <p>LeHealth Dental Provides a complete operations management solution for <br> small, medium and large level Dental Clinics. The Centralized architecture <br> of the software allows dental care enterprises to handle single or multichain <br> facilities easy and effective.</p>
-                    <a class="ann12" href="">Explore</a>
+                    <a class="ann12" href="#">Explore</a>
                 </div>
             </div>
+        </div>
+        <style>
+            .tt{
+                display: none;
+            }
+            .ann11{
+                display: none;
+            }
+            
+           
+        </style>
+      <script>
+        // JavaScript to handle clicking on links and showing respective images and content
+        const links = document.querySelectorAll('.ann5');
+        const images = document.querySelectorAll('.tt');
+        const ann11 = document.getElementById('ann11');
 
-            <div class="item">
-                <div class="ann10">
-                    <div class="ann8">
-                        <a href="#" class="ann5"> Lehealth Enterprise</a>
-                        <a href="#" class="ann5"> Lehealth Dental</a>
-                        <a href="#" class="ann5"> Lehealth Labrise</a>
-                        <a href="#" class="ann5"> Lehealth Derma & Aesthetics</a>
-                        <a href="#" class="ann5"> Lehealth Day Surgical Center</a>
-                    </div>
-                </div>
-                <div class="annmariya">
-                    <img class="tt6" src="assets/img/Frame 865.png" alt="" width="1500px" height="900px">
-                </div>
-                <div class="ann11">
-                    <h3>LeHealth Dental</h3>
-                    <p>LeHealth Dental Provides a complete operations management solution for <br> small, medium and large level Dental Clinics. The Centralized architecture <br> of the software allows dental care enterprises to handle single or multichain <br> facilities easy and effective.</p>
-                    <a class="ann12" href="">Explore</a>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="ann10">
-                    <div class="ann8">
-                        <a href="#" class="ann5"> Lehealth Enterprise</a>
-                        <a href="#" class="ann5"> Lehealth Dental</a>
-                        <a href="#" class="ann5"> Lehealth Labrise</a>
-                        <a href="#" class="ann5"> Lehealth Derma & Aesthetics</a>
-                        <a href="#" class="ann5"> Lehealth Day Surgical Center</a>
-                    </div>
-                </div>
-                <div class="annmariya">
-                    <img class="tt6" src="assets/img/Frame 865.png" alt="" width="1500px" height="900px">
-                </div>
-                <div class="ann11">
-                    <h3>LeHealth Enterprise</h3>
-                    <p>A fully Integrated Web-based Application for managing all types of Medical  Clinics and Medical Centers in UAE & GCC Countries.</p>
-                    <a class="ann12" href="">Explore</a>
-                </div>
-            </div>
-        </div> 
-
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                if (targetId === 'tt6') {
+                    // For Lehealth Enterprise, always display the image and content
+                    images.forEach(image => {
+                        image.style.display = 'none';
+                    });
+                    ann11.style.display = 'block';
+    
+                    document.getElementById(targetId).style.display = 'block';
+                } else {
+                    // For Lehealth Dental and Lehealth Labrise, display image and content only on click
+                    images.forEach(image => {
+                        if (image.id === targetId) {
+                            image.style.display = 'block';
+                        } else {
+                            image.style.display = 'none';
+                        }
+                    });
+                    ann11.style.display = 'none';
+                }
+            });
+        });
+    </script>
     </section>
 
-
     <section>
-         
         <div id="deep3" class="sql">
             <div>
                 <h4 class="choose">Why choose us?</h4>
@@ -235,37 +247,67 @@
                     <li class="choose9">Flexible to integrate with any third-party software/application</li>
                 </ul>
                 <div>
-                    <img id="for" src="assets/img/stock-photo-young-arab-doctor-surgeon-woman-over-isolated-background-smiling-and-looking-at-the-camera-pointing-1636197382-transformed Background Removed 1.png" alt="" height="500px" width="500px">
+                    <img id="for" src="./assets/img/stock-photo-young-arab-doctor-surgeon-woman-over-isolated-background-smiling-and-looking-at-the-camera-pointing-1636197382-transformed Background Removed 1.png" alt="" height="500px" width="500px">
                 </div>
             </div>
         </div>
+        <style>
+            /* CSS animations */
+            @keyframes fadeInUp {
+              0% {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            
+            /* Apply animations to specific elements */
+            #deep3, #ann13, .choose10 li, #for {
+              animation: fadeInUp 2s ease infinite;
+              animation-delay: 0.5s; /* Delay to start the animation */
+            }
+            </style>
     </section>
     <section>
-        <div >
+        <div>
             <div class="service">
-                <div class="owl-carousel">
-                    <div class="item">
-                        <div class="service_2">
-                            <h3>Our services</h3>
-                            <p class="service_3">“Amstor LeHealth” offers a highly customizable EMR solution with advanced integration facility to provide seamless integrations <br> with Patient Web Portal, 3rd party accounting management/ERP system, Lab machine interfacing and PACS systems.</p>
-                            <img class="if" src="assets/img/home page - pexels-pavel-danilyuk-7675014.jpg" alt="" width="1500px" height="700px">
-                            <div class="service_4">
-                                <h2>Product customization</h2>
-                                <p>LeHealth Software extends immense capability and flexibility to scaleup the product features based on the regional requirements and customer specific requirements to match the specific workflow and business rules.</p>
+                <div class="service_1">
+                    <h3>Our services</h3>
+                    <p class="service_3">“Amstor LeHealth” offers a highly customizable EMR solution with advanced integration facility to provide seamless integrations <br> with Patient Web Portal, 3rd party accounting management/ERP system, Lab machine interfacing and PACS systems.</p>
+                </div>
+                <div class="service_2">
+                    <img class="if" src="./assets/img/home page - pexels-pavel-danilyuk-7675014.jpg" alt="" >
+                    <div>
+                        <div class="service_4">
+                            <h3>product customisation</h3>
+                            <div class="arrow">
+                                <p >LeHealth Software extends immense capability and flexibility to scaleup the product features based on the regional requirements and customer specific requirements to match the specific workflow and business rules.</p>
+                                <button class="hr"> <img src="./assets/img/button.png" alt=""></button>
+                                <button class="hr"> <img src="./assets/img/button.png" alt=""></button>                       
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="service_2">
-                            <h3>Our services</h3>
-                            <p class="service_3">“Amstor LeHealth” offers a highly customizable EMR solution with advanced integration facility to provide seamless integrations <br> with Patient Web Portal, 3rd party accounting management/ERP system, Lab machine interfacing and PACS systems.</p>
-                            <img class="if" src="assets/img/home page - pexels-pavel-danilyuk-7675014.jpg" alt="" width="1500px" height="700px">
-                            <div class="service_4">
-                                <h2>Product customization</h2>
-                                <p>LeHealth Software extends immense capability and flexibility to scaleup the product features based on the regional requirements and customer specific requirements to match the specific workflow and business rules.</p>
+                        <!-- <div class="stopper">
+                            <h3>Patient web portal</h3>
+                            <div class="arrow">
+                                <p >Patient Portal is an advanced web portal specially designed to serve the patients to access their personal profile, medical reports, booking appointments, result access.etc. Patients can access it through any web enable devices.</p>                      
                             </div>
                         </div>
-                    </div>
+                        <div class="stopper1">
+                            <h3>Standard accounting/ERP Software Integration</h3>
+                            <div class="arrow">
+                                <p >LeHealth Software offers the capability to integrate the software with any global standard accounting software or ERP system to achieve the data sharing to make the booking keeping Up to Date.</p>                      
+                            </div>
+                        </div>
+                        <div class="stopper2">
+                            <h3>PACS system intergration with EMR system</h3>
+                            <div class="arrow">
+                                <p >Lehealth offers a comprehensive integrated Radiology information management Module which is capable to integrate with the PACS system to avail the X-Ray or Scan images access to the doctors in ERM system.</p>                      
+                            </div>
+                        </div> -->
+                    </div>                 
                 </div>
             </div>
         </div>
@@ -279,21 +321,21 @@
                 <div class="service-8">
                     <p>"LeHealth has revolutionized our medical <br> practice, streamlining operations <br> and improving patient care. It's a game-changer for modern healthcare."</p>  
                     <div class="tnt">
-                        <img class="input" src="assets/img/Ellipse 13.png" alt="">
+                        <!-- <img class="input" src="./assets/img/Ellipse 13.png alt="> -->
                         <p >Leading Medical Care Company <br>  Seattle, WA</p>
                     </div>                
                 </div>
                 <div class="service_6">
                     <p>"LeHealth has revolutionized our medical <br> practice, streamlining operations and <br> improving patient care. It's a game-changer <br> for modern healthcare."</p>
                     <div class="servive_9">
-                        <img src="assets/img/Ellipse 13.png" alt="">
+                        <img src="./assets/img/Ellipse 13.png" alt="">
                         <p>Leading Medical Care Company <br> Seattle, WA</p> 
                     </div>
                 </div>
                 <div class="service_7">
                     <p style="width: 18rem;">"LeHealth has revolutionized our medical practice, streamlining operations and improving patient care. It's a game-changer for modern healthcare."</p>
                     <div class="service_10">
-                        <img src="assets/img/Ellipse 13.png" alt="">
+                        <img src="./assets/img/Ellipse 13.png" alt="">
                         <p>Leading Medical Care Company <br> Seattle, WA</p>
                     </div>
                 </div>
@@ -307,58 +349,61 @@
                     <h1>Our Trusted Clients</h1>
                 </div>
                 <div id="font" class="font1">
-                    <img src="assets/img/1 369.png" alt="">
-                    <img src="assets/img/8 1.png" alt="">
-                    <img src="assets/img/6 88.png" alt="">
-                    <img src="assets/img/2 41.png" alt="">
-                    <img src="assets/img/3 1.png" alt="">
-                    <img src="assets/img/7 1.png" alt="">
+                    <img src="./assets/img/1 369.png" alt="">
+                    <img src="./assets/img/8 1.png" alt="">
+                    <img src="./assets/img/6 88.png" alt="">
+                    <img src="./assets/img/2 41.png" alt="">
+                    <img src="./assets/img/3 1.png" alt="">
+                    <img src="./assets/img/7 1.png" alt="">
                 </div>
             </div>
         </div>
-        <div >
+        <div>
             <div>
-                <h3 style="text-align: center;">Blogs</h3>
-            </div>
-            <div id="sec-1" class="tttt" >
-                <div>
-                    <img class="focus" src="assets/img/Frame 194.png" alt="">
-                    <div class="sec-2">
-                        <h4>ERP Systems - A world of <br> Opportunities and <br> Progress</h4>
-                        <p>30/10/2023</p>
+                <h4 style="text-align: center;">Blogs</h4>
+                <div class="box-wrapper">
+                    <div class="box">
+                        <div class="box_1">
+                            <img src="./assets/img/Frame 194.png" alt="Image Description">
+                            <h2>ERP Systems - A world of<br> Opportunities and<br> Progress</h2>
+                            <p class="hidden-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="date">30/10/2023</p>
+                        </div>         
                     </div>
-                </div>
-                <div>
-                    <img class="focus" src="assets/img/Frame 194-1.png" alt="">
-                    <div class="sec-2">
-                        <h4>Telemedicine and Speech- <br>to-Text</h4>
-                        <p>30/10/2023</p>
+                    <div class="box">
+                        <div class="box_1">
+                            <img src="./assets/img/Frame 194-1.png" alt="Image Description">
+                            <h2>Telemedicine and<br> Speech-to-Text</h2>
+                            <p class="hidden-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="date">30/10/2023</p>
+                        </div>           
                     </div>
-                </div>
-                <div>
-                    <img class="focus" src="assets/img/Frame 194-2.png" alt="">
-                    <div  class="sec-2">
-                        <h4>The Rise Of Patient <br> Centric EHR Systems</h4>
-                        <p>30/10/2023</p>
+                    <div class="box">
+                        <div class="box_1">
+                            <img src="./assets/img/Frame 194-2.png" alt="Image Description">
+                            <h2>The Rise Of Patient Centric<br> EHR Systems</h2>
+                            <p class="hidden-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="date">30/10/2023</p> 
+                        </div>          
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
+    <footer>
+        <div class="footer">
             <div class="row">
                 <div class="footer-col">
                     <h4>About us</h4>
                 </div>
                 <div class="footer-col">
                     <h4>Products</h4>
-                    <ul>
+                    <ul style="color: white;">
                         <li>LeHealth Enterprise</li>
                         <li>LeHealth Dental</li>
                         <li>LeHealth Derma & Aesthetics</li>
                         <li>LeHealth Day Surgical Center</li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
@@ -393,60 +438,23 @@
             <div>
                 <div class="jjj">
                     <div class="jj1">
-                        <div>
-                            <p>Copyright @ 2023</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/amstor logo.svg" alt="">
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
+                        <div class="jj_j2">
+                            <div >
+                                <p>Copyright @ 2023</p>
+                            </div>
+                            <img src="./assets/img/amstor logo.svg" alt="">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 
-
-
-
-    <script>
-        function showsidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hidesidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-
-        }
-
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            });
-        });
-
-    </script>
-
-
-    </script>
-
+    
     </body>
 </html>
