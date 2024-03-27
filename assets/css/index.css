@@ -20,7 +20,9 @@ nav ul{
 }
 nav li{
     height: 50px;
+    
 }
+
 nav a{
     display: flex;
     text-decoration: none;
@@ -28,6 +30,7 @@ nav a{
     height: 100%;
     padding: 0 20px;
     align-items: center;
+  
 }
 .sidebar{
     display: none;
@@ -40,15 +43,23 @@ nav a{
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     flex-direction: column;
     justify-content: flex-start;
-    background-color: white;
+    background: azure;
+   
 }
 
 .sidebar a{
     width: 100%;
 }
+
 #menu-button{
     display: none;
 }
+
+
+.nav_1 ul li a {
+    text-decoration: none;
+}
+
 
 
 .sec-p1{
@@ -72,7 +83,7 @@ nav a{
     color: var(--text-text-04, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: IBM Plex Sans;
-    font-size: 14px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.125rem; /* 128.571% */
@@ -105,18 +116,39 @@ nav a{
 .main-sec{
     display: flex;
 }
-.sec2{
+/* .sec2{
     background-color: #0000000A;
     text-align:center;
     font-family: IBM Plex Sans;
     color:rgba(0, 0, 0, 0.64);
- }
- .section2{
+    position: relative;
+    right: 40rem;
+    bottom: 9rem;
+    padding: 1rem 17rem;
+} */
+
+.sec-div2{
+    background-color: #0000000A;
+    border-radius: .5rem;
+    padding: 1rem 14rem ;
+    /* margin-top: 2.5rem; */
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    width: 56rem;
+    
+}
+
+
+
+ .sec-flex2{
     justify-content: center;
-    align-items:center;
     display: flex;
-    gap: 4rem;   
+    gap: 3rem;   
    
+ }
+ .kerala{
+    background: orangered;
+    border-radius: 1rem;
  }
 
 
@@ -128,7 +160,7 @@ nav a{
     /* width:10rem; */
     position: relative;
     right: -1rem;
-    top: 3rem;
+    /* top: 3rem; */
     
 }
 
@@ -142,7 +174,7 @@ nav a{
 
 #hero4{
     display: flex;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
 }
 #hero4 .ann1 {
     text-decoration: none;
@@ -323,7 +355,7 @@ nav a{
     background-color: #102057;
     color: white;
     position: relative;
-    bottom: 24rem;
+    bottom: 16rem;
     margin-left: 5rem;
 }
 .stopper{
@@ -340,7 +372,7 @@ nav a{
 .if{
     width: 50rem;
     height: 50rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 .stopper2{
     display: flow;
@@ -487,7 +519,7 @@ nav a{
 .box-wrapper{
     display: flex;
     gap: 20px;
-    width: 84rem;
+    /* width: 84rem; */
     margin-left: 5rem;
 }
 .box{
@@ -541,6 +573,7 @@ footer {
 .footer-col {
     flex: 1;
     margin-right: 20px;
+    color: white;
 }
 
 .footer-col h4 {
@@ -587,12 +620,27 @@ footer {
     body{
         overflow-x: hidden;
     }
+    if{
+        width: 100%;
+    }
+    .sec-div2{
+        width: 100%;
+        margin-left: 14rem;
+    }
+    /* }
     .sidebar{
         display: block;
+    } */
+    .section2{
+        width: 84rem;
+    }
+    .main-sec{
+       flex-direction: column;
     }
 
     .hideonmobile{
-        display: none;
+        /* display: none; */
+        display: block;
     }
     #menu-button{
         display: block;
@@ -601,6 +649,8 @@ footer {
         width: 100%;
         left: 0;
     }
+
+    
     .hhhh{
         display: flex;
     }
@@ -619,17 +669,7 @@ footer {
         width: 20rem;
         
     }
-    .sec-div2 {
-       
-        top: 360%;
-        left: 50%;
-        width: 21rem;
-    }
-    .sec-flex2 {
-        flex-wrap: wrap;
-        gap: 1rem;
-        
-    }
+ 
     .sec-div {
         position: relative;
         margin: 1rem 1rem;
@@ -655,6 +695,12 @@ footer {
         margin: 1rem 0;
         
     }
+    .have{
+        background: orangered;
+        /* padding: 0.5px 0px; */
+        width: 12rem;
+        border-radius: 1rem;
+    }
     .br2{
         
      text-decoration: none;
@@ -668,9 +714,9 @@ footer {
     .hdr{
         margin-top: 6rem;
     }
-    .hero4{
+    /* .hero4{
         margin-top: 23rem;
-    }
+    } */
     .ann4{
         margin-top: 3rem;
     }
@@ -698,21 +744,24 @@ footer {
         color: white;
         background-color: #102057;
     }
+}
+    
+
  
     
     
   
   
         
-}   
+ 
 
 @media only screen and (max-width:500px){
     body{
         overflow-x: hidden;
     }
-    .sidebar{
+    /* .sidebar{
         display: block;
-    }
+    } */
     .hideonmobile{
         display: none;   
     }
@@ -765,32 +814,35 @@ footer {
    .if{
     width: 5rem ;
    }
+   .choose10{
+    margin-right: 6rem;
+   }
   .choose1{
-    width: 12rem;
+    width: 17rem;
   }
   .choose2{
-    width: 13rem;
+    width: 17rem;
   }
   .choose3{
-    width: 13rem;
+    width: 17rem;
   }
   .choose4{
-    width: 14rem;
+    width: 17rem;
   }
   .choose5{
-    width: 14rem;
+    width: 17rem;
   }
   .choose6{
-    width: 16rem;
+    width: 17rem;
   }
   .choose7{
-    width: 16rem;
+    width: 17rem;
   }
   .choose8{
-    width: 15rem;
+    width: 17rem;
   }
   .choose9{
-    width: 15rem;
+    width: 17rem;
   }
   .choose10{
     font-size: 10px;
@@ -836,6 +888,16 @@ footer {
 }
 .focus{
     width: 27rem;
+}
+.box-wrapper{
+    flex-direction: column;
+    margin-left: 0;
+}
+.section2{
+    display: none;
+}
+.heading{
+    margin-bottom: -7rem;
 }
 
 }

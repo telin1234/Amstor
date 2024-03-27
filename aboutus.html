@@ -21,33 +21,45 @@
                         <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
                         <img src="assets/img/amstor logo.svg" alt="">
                         </div>
-                        <li class="menu-item"><a class="menu-link" href="#">aboutus</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Our teamt</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">career</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">contact us</a></li>
+                        <li class="menu-item"><a class="menu-link" href="aboutus.html">aboutus</a></li>
+                        <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
+                        <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
+                        <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                        <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
+                        <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
+                        <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
                         <li class="have"><a href="#">Download Brochure</a></li>
                     </ul>
                     <ul>
                         <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
                         <img class="am" src="assets/img/amstor logo.svg" alt="">
-                        <li class="hideonmobile"><a class="menu-link" href="#">About us</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Products</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Our team</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Blog</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">career</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">contact us</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="product.html">Products</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="contact us.html">contact us</a></li>
                         <li class="kerala"><a href="#">Download Brochure</a></li>
-                    </ul>
-                    
+                    </ul>   
             </div>
         </nav>
+        <script>
+            function showsidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+    
+            }
+    
+    
+        </script>
     </header>
     <section >
-        <div>
-            <img class="orl" src="assets/img/Frame 672 (3).png" alt="" width="1550rem" >
+        <div class="orl">
+            <img  src="assets/img/Frame 672 (4).png" alt="" width="1680px" >
         </div>
     </section>
     <section >
@@ -55,10 +67,10 @@
             <div class=" amstor1">
                 <img class="orl1" src="assets/img/amstor.png" alt="">
                 <p>Innovative Digital Strategies for Your Business <br> Business</p> 
-                <p>Amstor Technologies LLC, Dubai., a subsidiary of Amstory Group of <br> Companies founded in 1996, is a leading provider of Healthcare <br> Information Management System for Poly Clinics, Medical Centers, <br> Medical Laboratories and Daycare Surgical Centers in UAE and other <br> GCC countries. </p>          
+                <p>Amstor Technologies LLC, Dubai., a subsidiary of Amstory Group of  Companies founded in 1996, is a leading provider of Healthcare  Information Management System for Poly Clinics, Medical Centers,  Medical Laboratories and Daycare Surgical Centers in UAE and other  GCC countries. </p>          
             </div>
             <div>
-                <img style="width: 53rem;" src="assets/img/Frame 863.png" alt="" width="600px" height="400px">
+                <img class="amst_img" src="assets/img/Frame 863.png" alt="">
             </div>
         </div>
         <div>
@@ -84,7 +96,7 @@
                     <p>LeHealth Software provides complete operations management of small, medium, large level, single or multi-chain poly clinics and medical <br> centers. Amstor consists of a team of experienced and dedicated professionals that each carries extensive experience in their <br> own field. Their passion to implement highly successful strategies, provide affordable health care solutions, and introduce innovative technologies inspired <br> them to create application for Poly clinics and Medical Center Management system.</p>
                 </div>
                 <div class="amstor7">
-                    <img class="ore" src="./img/Key-features-of-effective-software-development- 1.png" alt="">
+                    <img class="ore" src="./assets/img/Key-features-of-effective-software-development- 1.png" alt="">
                 </div>
                 <div class="amstor8">
                     <p>Being a customer driven organization, Amstor constantly strives to <br> provide the highest quality service to its customers that results in <br> Client ownership and highest level of productivity at work.</p>
@@ -136,7 +148,7 @@
          </section>
         <div>
             <div id="amstor18" class="amstor18">
-                <div>
+                <div class="our_mission">
                     <h3>Our Mission</h3>
                     <p>To enable businesses to grow by using our effective solutions that are tailored to meet those needs. The company is committed to providing high-quality, cost-effective services that help businesses to improve their IT operations and stay ahead of the competition.</p>
                     <div class="amstor19">
@@ -147,7 +159,7 @@
             </div>
         </div>
         <div>
-            <div id="amstor20">
+            <div id="amstor20" class="amstor20">
                 <div>
                     <img style="    width: 13rem;" src="assets/img/Frame 626.png" alt="">
                     <h4>Abraham Mathai</h4>
@@ -160,31 +172,31 @@
             </div>
         </div>
 
-        <div>
-            <div id="amstor22">
-                <div>
-                    <h3>Founder's Message</h3>
-                    <p>At Amstor, we are committed to providing exceptional services, leveraging the latest technologies, and staying ahead of the curve in an ever-evolving digital landscape. Our team is driven by a passion for excellence, and we are relentless in our pursuit of transforming businesses through technology. I want to express my sincere gratitude to all our clients, partners, and team members for their unwavering support. Together, we will continue to innovate, thrive, and make a positive impact in the world of technology. Thank you for being a part of our journey.</p>
-                    <p>Abraham Mathai <br>
-                        MANAGING DIRECTOR, AMSTOR GROUP OF COMPANIES, TECHNOPARK</p>
+            <div>
+                <div id="amstor22" class="amstor22">
+                    <div>
+                        <h3>Founder's Message</h3>
+                        <p>At Amstor, we are committed to providing exceptional services, leveraging the latest technologies, and staying ahead of the curve in an ever-evolving digital landscape. Our team is driven by a passion for excellence, and we are relentless in our pursuit of transforming businesses through technology. I want to express my sincere gratitude to all our clients, partners, and team members for their unwavering support. Together, we will continue to innovate, thrive, and make a positive impact in the world of technology. Thank you for being a part of our journey.</p>
+                        <p>Abraham Mathai <br>
+                            MANAGING DIRECTOR, AMSTOR GROUP OF COMPANIES, TECHNOPARK</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-    <footer class="footer">
-        <div class="container">
+    <footer>
+        <div class="footer">
             <div class="row">
                 <div class="footer-col">
                     <h4>About us</h4>
                 </div>
                 <div class="footer-col">
                     <h4>Products</h4>
-                    <ul>
+                    <ul >
                         <li>LeHealth Enterprise</li>
                         <li>LeHealth Dental</li>
                         <li>LeHealth Derma & Aesthetics</li>
                         <li>LeHealth Day Surgical Center</li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
@@ -219,37 +231,25 @@
             <div>
                 <div class="jjj">
                     <div class="jj1">
-                        <div>
-                            <p>Copyright @ 2023</p>
-                        </div>
-                        <div>
-                            <img src="./img/amstor logo.svg" alt="">
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
+                        <div class="jj_j2">
+                            <div >
+                                <p>Copyright @ 2023</p>
+                            </div>
+                            <img src="./assets/img/amstor logo.svg" alt="">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
+
+   
 
 
-
-    <script>
-        function showsidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hidesidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-
-        }
-
-
-    </script>
  </body>
  </html>

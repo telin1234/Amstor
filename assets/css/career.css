@@ -35,10 +35,7 @@
 }
 
 
-.career7{
-    margin-top:3rem;
-    margin-left: 94px;
-}
+
 
 
 
@@ -60,6 +57,7 @@
         position: relative;
         left: -56px;
     }
+
    
 
     
@@ -67,6 +65,8 @@
 }
 
 @media only screen and(max-width:500px){
+
+    
 
    
    

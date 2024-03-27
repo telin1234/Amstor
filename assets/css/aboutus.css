@@ -15,7 +15,7 @@
     padding: 0px 9px;
     background: white;
     /* width: 35rem; */
-    height: 23rem;
+    /* height: 30rem; */
 }
 
 .amstor2{
@@ -37,6 +37,10 @@
 .amstor5{
     padding-left: 65px;
 }
+.amst_img{
+    width: 79rem;
+    height: 34rem;
+}
 
 .amstor8{
     background-color: #E4E3E0;
@@ -47,6 +51,7 @@
 }
 .amstor9{
     font-size: 21px;
+    color: #0D1942;
 }
 .amstor11{
     width: 27rem;
@@ -68,7 +73,8 @@
 #amstor18 p{
     width: 71rem;
     font-size: 22px;
-    padding: 29px 198px;
+    /* padding: 29px 198px; */
+    padding: 3rem 12rem;
 }
 .amstor19{
     display: flex;
@@ -78,9 +84,10 @@
 #amstor20{
     display: flex;
     margin-left: 49px;
+    padding: 1rem;
 }
 .amstor21{
-    width: 51rem;
+    /* width: 51rem; */
     margin-left: 6rem;
 }
 #amstor22{
@@ -131,7 +138,7 @@
     width: 28rem;
 }
 /* .amstor14 p{
-    width: 28rem;
+width: 28rem;
 } */
 /* .amstor14{
     justify-content: space-around;
@@ -142,18 +149,27 @@
     padding-left: 14rem;
 }
 .amstor7{
-    padding-left: 17rem,
+    text-align: -webkit-center;
+}
+.ourteaM_img{
+    width: 105rem;
+}
+.amstor1 p{
+    width: 25rem;
 }
 
 @media only screen and (max-width:800px){
     .orl{
-        width: 47rem;
+        width: 100%;
     }
     .amstor{
         flex-direction: column;
     }
     .ekk{
         flex-direction: column-reverse;
+        width: 24rem;
+        margin-left: -3rem;
+
     }
     .amstor2{
         flex-direction: column-reverse;
@@ -161,9 +177,7 @@
     .orl1{
         width: 37rem;
     }
-    .amstor1{
-        width: 52rem;
-    }
+  
     .amstor6{
         width: auto;
         padding: unset;
@@ -175,6 +189,7 @@
     }
     .ore{
         width: 37rem;
+    
     }
     .amstor8{
         width: 20rem;
@@ -183,11 +198,29 @@
         flex-direction: column;
     }
     .amstor18{
+        display: none;
+
+    }
+  
+    .amstor18{
         width: 83rem;
     }
     .amstor18 p{
         width: 58rem;
     }
+    .amstor20{
+        flex-direction: column;
+    }
+    .amstor21{
+        margin-left: 0rem;
+    }
+    .amstor22{
+        display: none;
+    }
+  
+    
+  
+    
 }
 
 
@@ -208,5 +241,7 @@
     .tnt1{
         width: 247rem;
     }
+    
+   
  
 }

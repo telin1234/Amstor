@@ -16,34 +16,48 @@
     <header>
         <nav class="nav_1">
             <div class="nav_2">
-                    <ul class="sidebar">
-                        <div class="hhhh">
-                        <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
-                        <img src="assets/img/amstor logo.svg" alt="">
-                        </div>
-                        <li class="menu-item"><a class="menu-link" href="#">aboutus</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Our teamt</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">career</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">contact us</a></li>
-                        <li class="have"><a href="#">Download Brochure</a></li>
-                    </ul>
-                    <ul>
-                        <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
-                        <img class="am" src="assets/img/amstor logo.svg" alt="">
-                        <li class="hideonmobile"><a class="menu-link" href="#">About us</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Products</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Our team</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">Blog</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">career</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="#">contact us</a></li>
-                        <li class="kerala"><a href="#">Download Brochure</a></li>
-                    </ul>
+                <ul class="sidebar">
+                    <div class="hhhh">
+                    <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
+                    <img src="assets/img/amstor logo.svg" alt="">
+                    </div>
+                    <li class="menu-item"><a class="menu-link" href="aboutus.html">about us</a></li>
+                    <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
+                    <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
+                    <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                    <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
+                    <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
+                    <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
+                    <li class="have"><a href="#">Download Brochure</a></li>
+                </ul>
+                <ul>
+                    <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
+                    <img class="am" src="assets/img/amstor logo.svg" alt="">
+                    <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="product.html">Products</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="service.html">Services</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
+                    <li class="hideonmobile"><a class="menu-link" href="contact us.html">contact us</a></li>
+                    <li class="kerala"><a href="#">Download Brochure</a></li>
+                </ul> 
                     
             </div>
         </nav>
+        <script>
+            function showsidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+    
+            }
+    
+    
+        </script>
     </header>
     <section >
         <img class="hii"  src="assets/img/Frame 672 (3).png"  alt="">
@@ -55,7 +69,7 @@
                     <h4>8.10.2020</h4>
                     <h1>Flutter Developer</h1>
                     <p>Ut felis eu, vitae tincidunt ut natoque sed. Semper quisque in enim, diam venenatis, tristique. Orci imperdiet aenean bibendum eget suscipit. Rhoncus neque commodo viverra pharetra scelerisque.</p>
-                    <div>
+                    <div >
                         <h4>Skill set required</h4>
                         <p>• Flutter</p>
                         <p>• Git</p>
@@ -166,20 +180,20 @@
     </style>
     </section>
 
-    <footer class="footer">
-        <div class="container">
+    <footer>
+        <div class="footer">
             <div class="row">
                 <div class="footer-col">
                     <h4>About us</h4>
                 </div>
                 <div class="footer-col">
                     <h4>Products</h4>
-                    <ul>
+                    <ul >
                         <li>LeHealth Enterprise</li>
                         <li>LeHealth Dental</li>
                         <li>LeHealth Derma & Aesthetics</li>
                         <li>LeHealth Day Surgical Center</li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
@@ -214,36 +228,25 @@
             <div>
                 <div class="jjj">
                     <div class="jj1">
-                        <div>
-                            <p>Copyright @ 2023</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/amstor.png" alt="">
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
+                        <div class="jj_j2">
+                            <div >
+                                <p>Copyright @ 2023</p>
+                            </div>
+                            <img src="./assets/img/amstor logo.svg" alt="">
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 
 
-    <script>
-        function showsidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hidesidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-
-        }
 
 
-    </script>
 </body>
 </html>
