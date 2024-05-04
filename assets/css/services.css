@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+/* servicepage */
+
+#dream{
+    display: flex;
+    margin-top: 25px;
+}
+.dream3{
+    width: 18rem;
+    margin-bottom: 1rem;
+}
+.dream4{
+    width: 16rem;
+}
+.dream2{
+    font-size: 19px;
+    margin-left: 387px;
+}
+.dream5{
+    margin-top: 48px;
+    /* margin-left: 42px */
+}
+.dream6{
+    width: 49rem;
+    margin-left: 45rem;
+    font-size: 19px
+}
+.dream1{
+    margin-left: 30px;
+    display: grid;
+}
+.dream7{
+    text-align: justify;
+    margin-left: 45rem;
+    margin-top: 25px;
+}
+.dream8 p{
+    position: relative;
+    bottom: 17px;
+    left: 15px;
+
+}
+
+
+/* service1 page */
+
+/* .dream9{
+    display: grid;
+} */
+.dream10{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    font-size: 22px;
+}
+.mll{
+    display: flex;
+    flex-direction: column;
+}
+
+#dream13{
+    display: flex;
+    padding-top: 32px;
+    margin-left: 29px;
+}
+.sss{
+    width: 100rem;
+}
+.lol{
+    width: 100rem;
+}
+.aflu{
+    text-align: justify;
+    margin-left: 45rem;
+    margin-top: 25px;
+}
+.aflu p{
+    position: relative;
+    bottom: 17px;
+    left: 15px;
+}
+.afl{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+service page */
+.amstor26 p{
+    width: 22rem;
+}
+   
+.amstor27{
+    position: absolute;
+    top: 237px;
+    margin-left: 166px;
+    color: black;
+    font-size: 18px;
+}
+
+#amstor28{
+    display: flex;
+    gap: 40px;
+    margin-top: 42px;
+    margin-left: 30px;
+   
+}
+.amstor29{
+    width: 28rem;
+    margin-top: 62px;
+    
+}
+.amstor31{
+    display: flex;
+    gap: 35px;
+}
+
+#amstor30{
+    padding-top: 3rem;
+    margin-left: 3rem;
+}
+.amstor32{
+    display: flex;
+    gap: 35px;
+}
+
+.amstor33{
+    display: flex;
+    gap: 35px;
+}
+
+/* blog page */
+.blog_2{
+    color: #102057 ;
+    font-size: 56px;
+}
+.blog_3{
+    display: flex;
+    gap: 16rem;
+    margin-top: 5rem;
+}
+#blog_1{
+    margin-left: 2rem;
+}
+.blog_3 p{
+    font-size: x-large;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+    .imgA{
+        width: 100%;
+    }
+    .dream1{
+        display: none;
+    }
+    .gg{
+        flex-direction: column;
+    }
+    .dream2{
+        margin-left: 2rem;
+    }
+    .dream5{
+        width: 100%;
+    }
+    .dream6{
+    position: relative;
+    right: 44rem;
+    width: 26rem;
+    }
+    .dream7{
+        margin-left: 2rem;
+    }
+    .dream9{
+        display: none;
+    }
+    .dree{
+        margin-left: -14rem;
+    }
+  
+    
+    .dream10 p{
+        width: 100%;
+    }
+   
+    .tl{
+        width: 100%
+    }
+    .sss{
+        width: 100%;
+    }
+    .dream12{
+        /* margin-left: -36rem; */
+        width: 100%;
+    }
+    .mll{
+        flex-direction: column-reverse;
+    }
+    .aflu{
+        margin-left: 2rem;
+    }
+    .afl{
+        flex-direction: column-reverse;
+    }
+    .hr{
+        width: 100%;
+    }
+    .on{
+        width: 69rem;
+    }
+    .blog_3{
+        flex-direction: row;
+        gap: initial;
+    }
+    .blog_3 p{
+        font-size: 1rem;
+    }
+       }
+    
+
+
+    
+    
+
+
+
+
+@media only screen and (max-width:500px){
+    .sss{
+        width: 100%;
+    }
+    .dream9{
+        display: none;
+    }
+    .amstor26 p{
+        width: 14rem;
+    }
+    .npt{
+        flex-direction: column;
+    }
+    .on{
+        width: 100%;
+    }
+    .amstor31{
+        flex-direction: column;
+    }
+    .amstor32{
+        flex-direction: column;
+    }
+    .amstor33{
+        flex-direction: column;
+    }
+   .fl{
+    display: none;
+   }
+   .blog_2{
+    font-size: 1rem;
+   }
+  
+   
+}

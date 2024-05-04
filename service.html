@@ -3,186 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amstor le-health</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/service.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <header>
-        <nav class="nav_1">
-            <div class="nav_2">
-                    <ul class="sidebar">
-                        <div class="hhhh">
-                        <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
-                        <img src="assets/img/amstor logo.svg" alt="">
-                        </div>
-                        <li class="menu-item"><a class="menu-link" href="aboutus.html">aboutus</a></li>
-                        <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
-                        <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
-                        <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
-                        <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
-                        <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
-                        <li class="have"><a href="#">Download Brochure</a></li>
-                    </ul>
-                    <ul>
-                        <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
-                        <img class="am" src="assets/img/amstor logo.svg" alt="">
-                        <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="product.html">Products</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="service.html">Services</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="contact us.html">contact us</a></li>
-                        <li class="kerala"><a href="#">Download Brochure</a></li>
-
-
-                    </ul>
-                    
-            </div>
-        </nav>
-    </header>
-    <section>
-        <img class="imgA" src="assets/img/Frame 672 3(1).png" alt="" width="1510px">
-    </section>
-    <section>
-        <div>
-            <div id="dream" class="gg">
-                <div class="dream1">
-                    <p >Patient web portal</p>
-                    <p>Product customization</p>
-                    <p>Standard accounting/ERP Software Integration</p>
-                    <p>LIMS - LAB Machine Interfacing</p>
-                    <p>PACS System Integration with EMR system </p>
+    <title>Amstor le-health</title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amstor le-health</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/services.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <header>
+            <nav class="nav_1">
+                <div class="nav_2">
+                        <ul class="sidebar">
+                            <div class="hhhh">
+                            <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
+                            <img src="assets/img/amstor logo.svg" alt="">
+                            </div>
+                            <li class="menu-item"><a class="menu-link" href="aboutus.html">about us</a></li>
+                            <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="service.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service1.html">Service 1</a></li>
+                                    <li><a href="service2.html">Service 2</a></li>
+                                    <li><a href="service3.html">Service 3</a></li>
+                                    <li><a href="service4.html">Service 4</a></li>
+                                </ul>
+                            </li>
+                            <style>
+                               .menu-link {
+                                    
+                                    display: block;
+                                }
+                                .sub-menu{  
+                                    display: none;
+                                    position: relative;
+                                    bottom: 3rem;
+                                    left: 6rem;
+                                    background-color: #f9f9f9;
+                                    min-width: 120px;
+                                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                }
+                                .menu-item:hover .sub-menu{
+                                    display: block;
+                                }
+                                .sub-menu li {
+                                    display: block;
+                                }
+                                .sub-menu li a {
+                                    color: black;
+                                    padding: 10px;
+                                    text-decoration: none;
+                                }
+                                .sub-menu li a:hover {
+                                    background-color: #ddd;
+                                }
+                            </style>
+                            <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                            <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
+                            <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
+                            <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
+                            <li class="have"><a href="#">Download Brochure</a></li>
+                        </ul>
+                        <ul>
+                            <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
+                            <img class="am" src="assets/img/amstor logo.svg" alt="">
+                            <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
+                            <div class="hideonmobile">
+                                <div class="subnav">
+                                    <li  class="subnavbtn"><a class="menu-link" href="product.html">products</a></li>
+                                    <div class="subnav-content">
+                                        <a href="product1.html"> product1</a>
+                                        <a href="product2.html"> product2</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hideonmobile">
+                                <div class="subnav">
+                                    <li  class="subnavbtn"><a class="menu-link" href="service.html">Service</a></li>
+                                    <div class="subnav-content">
+                                        <!-- <a href="service.html"> service </a> -->
+                                        <a href="service1.html"> service1 </a>
+                                        <a href="service2.html"> service2</a>
+                                        <a href="service3.html"> service3</a>
+                                        <a href="service4.html"> service4</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                            <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
+                            <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
+                            <li class="hideonmobile"><a class="menu-link" href="contact us.html">contact us</a></li>
+                            <li class="kerala"><a href="#">Download Brochure</a></li>
+                        </ul>   
                 </div>
-                <div class="dream2">
-                    <h2>Patient web portal</h2>
-                    <p class="dream3">Patient Portal is an advanced web portal specially designed to serve the patients to access their personal profile, medical reports, booking appointments, result access.etc. Patients can access it through any web enable devices.  </p>
-                    <p class="dream4">Patient portal provides the patients easy access and interaction facility with the health facilities to get the best service experience.</p>
+            </nav>
+        </header>
+    
+            <style>
+                 .subnav {
+                position: relative;
+                display: inline-block;
+            }
+    
+            .subnav-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+    
+            .subnav-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .subnav-content a:hover {
+                background-color: #ddd;
+            }
+    
+            .subnav:hover .subnav-content {
+                display: block;
+            }
+    
+            /* Animation for service1 */
+            @keyframes slideInFromLeft {
+                0% {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+    
+            .service1-animation {
+                animation: slideInFromLeft 0.5s ease-out;
+            }
+    
+            /* Animation for service2 */
+            @keyframes slideInFromBottom {
+                0% {
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+    
+            .service2-animation {
+                animation: slideInFromBottom 0.5s ease-out;
+            }
+            </style>
+            <script>
+                function showsidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hidesidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+        
+                }
+        
+        
+            </script>
+        <section>
+            <div>
+                <div id="dream" class="gg">
+                    <div class="dream1">
+                        <p >Patient web portal</p>
+                        <p>Product customization</p>
+                        <p>Standard accounting/ERP Software Integration</p>
+                        <p>LIMS - LAB Machine Interfacing</p>
+                        <p>PACS System Integration with EMR system </p>
+                    </div>
+                    <div class="dream2">
+                        <h2>Patient web portal</h2>
+                        <p class="dream3">Patient Portal is an advanced web portal specially designed to serve the patients to access their personal profile, medical reports, booking appointments, result access.etc. Patients can access it through any web enable devices.  </p>
+                        <p class="dream4">Patient portal provides the patients easy access and interaction facility with the health facilities to get the best service experience.</p>
+                    </div>
+                    <div>
+                        <img class="dream5" src="assets/img/Frame 785.png" alt="" width="400px" height="300px">
+                    </div>
+                </div>
+                <div class="dream6">
+                    <p>Patient portal enables the patients to access the system through the clinic/medical center websites and can book the appointment based on the available slots of each doctor. Also, it facilitates to make the online payment, Report/Result access.</p>
+                </div>
+                <div class="dream7">
+                    <h4>Core features</h4>
+                    <div class="dream8">
+                        <div>
+                            <img  src="assets/img/Vector.png" alt="">
+                            <p>Easy access through clinic website or any browser </p>
+                            </div>
+                            <div>
+                                <img src="assets/img/Vector.png" alt="">
+                                <p>Appointment Booking</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/Vector.png" alt="">
+                                <p>Patient Medical Reports</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/Vector.png" alt="">
+                                <p>Patient Medical Prescriptions</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/Vector.png" alt="">
+                                <p>Patient Lab / Radiology Reports</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/Vector.png" alt="">
+                                <p>Patient Profile</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Products</h4>
+                        <ul>
+                            <li>LeHealth Enterprise</li>
+                            <li>LeHealth Dental</li>
+                            <li>LeHealth Derma & Aesthetics</li>
+                            <li>LeHealth Day Surgical Center</li>
+                        </ul>  
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our team</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Careers</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Blog</h4>
+                    </div>
+                    <div class="footer-col">
+                        <h4>UAE</h4>
+                        <p>Amstor Technologies LLC <br>
+                            Al Basti Unit #9, Doha Street <br> 
+                            Karama, Dubai <br> 
+                            United Arab Emirates <br>
+                            Email: sales/marketing@amstorglobal.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>India</h4>
+                        <p>Amstor IT Services Pvt.Ltd <br>
+                            Amstor House, <br> 
+                            Technopark Phase 1, <br>
+                            Kazhakootam, Trivandrum <br>
+                            Kerala, India -695 581 <br>
+                            Email: info@amstorglobal.com</p>
+                    </div>
                 </div>
                 <div>
-                    <img class="dream5" src="assets/img/Frame 785.png" alt="" width="400px" height="300px">
-                </div>
-            </div>
-            <div class="dream6">
-                <p>Patient portal enables the patients to access the system through the clinic/medical center websites and can book the appointment based on the available slots of each doctor. Also, it facilitates to make the online payment, Report/Result access.</p>
-            </div>
-            <div class="dream7">
-                <h4>Core features</h4>
-                <div class="dream8">
-                    <div>
-                        <img  src="assets/img/Vector.png" alt="">
-                        <p>Easy access through clinic website or any browser </p>
-                        </div>
-                        <div>
-                            <img src="assets/img/Vector.png" alt="">
-                            <p>Appointment Booking</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/Vector.png" alt="">
-                            <p>Patient Medical Reports</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/Vector.png" alt="">
-                            <p>Patient Medical Prescriptions</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/Vector.png" alt="">
-                            <p>Patient Lab / Radiology Reports</p>
-                        </div>
-                        <div>
-                            <img src="assets/img/Vector.png" alt="">
-                            <p>Patient Profile</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>About us</h4>
-                </div>
-                <div class="footer-col">
-                    <h4>Products</h4>
-                    <ul>
-                        <li>LeHealth Enterprise</li>
-                        <li>LeHealth Dental</li>
-                        <li>LeHealth Derma & Aesthetics</li>
-                        <li>LeHealth Day Surgical Center</li>
-                    </ul>  
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                </div>
-                <div class="footer-col">
-                    <h4>Our team</h4>
-                </div>
-                <div class="footer-col">
-                    <h4>Careers</h4>
-                </div>
-                <div class="footer-col">
-                    <h4>Blog</h4>
-                </div>
-                <div class="footer-col">
-                    <h4>UAE</h4>
-                    <p>Amstor Technologies LLC <br>
-                        Al Basti Unit #9, Doha Street <br> 
-                        Karama, Dubai <br> 
-                        United Arab Emirates <br>
-                        Email: sales/marketing@amstorglobal.com</p>
-                </div>
-                <div class="footer-col">
-                    <h4>India</h4>
-                    <p>Amstor IT Services Pvt.Ltd <br>
-                        Amstor House, <br> 
-                        Technopark Phase 1, <br>
-                        Kazhakootam, Trivandrum <br>
-                        Kerala, India -695 581 <br>
-                        Email: info@amstorglobal.com</p>
-                </div>
-            </div>
-            <div>
-                <div class="jjj">
-                    <div class="jj1">
-                        <div>
-                            <p>Copyright @ 2023</p>
-                        </div>
-                        <div>
-                            <img src="./img/amstor logo.svg" alt="">
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
+                    <div class="jjj">
+                        <div class="jj1">
+                            <div>
+                                <p>Copyright @ 2023</p>
+                            </div>
+                            <div>
+                                <img src="./img/amstor logo.svg" alt="">
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer> 
-
-
-
-    <script>
-        function showsidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
+        </footer> 
+    
+    
+    
+        <script>
+            function showsidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+    
+            }
+            function toggleServices() {
+            var submenu = document.getElementById("services-submenu");
+            if (submenu.style.display === "none") {
+                submenu.style.display = "block";
+            } else {
+                submenu.style.display = "none";
+            }
         }
-        function hidesidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
 
-        }
-
-
-    </script>
-    </body>
+   
+    
+    
+        </script>
+        </body>
     </html>

@@ -1,0 +1,183 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.lehealth .lehealth1 h3,p {
+  text-align: center;
+}
+.lehealth2{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#lehealth3{
+  color: #102057
+}
+.lehealth5{
+    display: flex;
+}
+.lehealth6{
+    width: 31rem;
+    margin-left: 5rem;
+    font-size: 19px;
+}
+.lehealth7{
+    margin-left: 12rem;
+}
+.lehealth8{
+    display: flex;
+    margin-left: 22rem;
+    gap: 7rem;
+    margin-top: 43px;
+}
+.lehealth9 p{
+        position: relative;
+        bottom: 38px;
+        left: 44px;
+}
+.lehealth10 p{
+    position: relative;
+    bottom: 38px;
+    left: 44px;
+}
+.lehealth12{
+    text-align: center;
+}
+.abv{
+  text-align: center;
+}
+.effo{
+  text-align: center;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+  }
+
+  .lehealth13{
+    display: flex;
+    gap: 7rem;
+    background: azure;
+    border-radius: 9px;
+  }
+ .lehealth14 p{
+    position: relative;
+    bottom: 34px;
+    left: 17px;
+    
+ }
+ #lehealth15{
+    margin-left: 8rem;
+  }
+  #lehealth16{
+    border: 0px solid ;
+    padding: 1px;
+    margin-bottom: 20px;
+    background: ghostwhite;
+  }
+  #lehealth17{
+    display: flex;
+    gap: 7rem;
+  }
+  .lehealth1 h2{
+    padding-top: 2rem;
+  }
+  .lehealth1 p{
+    padding-top: 2rem;
+  }
+  .leeee_1{
+    position: relative;
+    bottom: 18rem;
+    left: 8rem;
+  }
+  #product_img{
+    width: 107rem;
+    height: 45rem;
+  }
+ .lehealth18{
+    color: white;
+    background-color: 
+    #102057;
+ }
+ #fire{
+    margin-left: 19rem;
+ }
+
+
+  @media only screen and (max-width:800px){
+    .bore{
+        width: 100%;
+    }
+    .lehealth{
+        width: auto;
+    }
+    .lehealth2{
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .lehealth3{
+        width: 24rem;
+        margin-top: 1rem;
+    }
+    .fon{
+        width: 24rem;
+    }
+
+    .bore1{
+        width: 100%;
+    }
+    .lehealth13{
+      flex-direction: column;
+    }
+    .lehealth14{
+      flex-direction: column;
+    }
+    .lehealth17{
+      flex-direction: column;
+    }
+    .lehealth5{
+      flex-direction: column-reverse;
+  }
+   .lehealth4{
+    width: 38rem;
+    margin-left: -3rem;
+   }
+   .lehealth8{
+    flex-direction: column;
+    margin-left: 1rem;
+   }
+   .lehealth11{
+    display: none;
+   }
+   .lehealth15{
+    margin-left: 1rem;
+  }
+  .leeee_1{
+    margin-left: -6rem;
+    bottom: 12rem;
+  }
+  .aset1{
+    width: auto;
+  }
+  .lehealth7{
+    flex-direction: column;
+  }
+  .fire{
+    position: relative;
+      right: 16rem;
+  }
+}
+
+  @media only screen and (max-width:500px){
+    .lehealth15{
+      margin-left: 1rem;
+    }
+ 
+
+  }

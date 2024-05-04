@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #E4E3E0;
+    /* background-color: #E4E3E0; */
 }
 
 nav{
@@ -45,7 +45,7 @@ nav a{
     justify-content: flex-start;
     background: azure;
    
-}
+} 
 
 .sidebar a{
     width: 100%;
@@ -58,6 +58,16 @@ nav a{
 
 .nav_1 ul li a {
     text-decoration: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1; 
+}
+
+#services-submenu{
+  background-color: white;
+  
 }
 
 
@@ -637,9 +647,10 @@ footer {
     .main-sec{
        flex-direction: column;
     }
+   
 
     .hideonmobile{
-        /* display: none; */
+       
         display: block;
     }
     #menu-button{
@@ -744,6 +755,7 @@ footer {
         color: white;
         background-color: #102057;
     }
+    
 }
     
 
@@ -765,6 +777,7 @@ footer {
     .hideonmobile{
         display: none;   
     }
+   
     #menu-button{
         display: block;
     }

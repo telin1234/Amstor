@@ -19,26 +19,44 @@
     <header>
         <nav class="nav_1">
             <div class="nav_2">
-                    <ul class="sidebar">
-                        <div class="hhhh">
-                        <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
-                        <img src="assets/img/amstor logo.svg" alt="">
-                        </div>
-                        <li class="menu-item"><a class="menu-link" href="aboutus.html">about us</a></li>
-                        <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
-                        <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
-                        <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
-                        <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
-                        <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
-                        <li class="have"><a href="#">Download Brochure</a></li>
-                    </ul>
-                    <ul>
+                <ul class="sidebar">
+                    <div class="hhhh">
+                    <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
+                    <img src="assets/img/amstor logo.svg" alt="">
+                    </div>
+                    <li class="menu-item"><a class="menu-link" href="aboutus.html">about us</a></li>
+                    <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
+                    <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
+                    <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
+                    <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
+                    <li class="menu-item"><a class="menu-link" href="career.html">career</a></li>
+                    <li class="menu-item"><a class="menu-link" href="contact us.html">contact us</a></li>
+                    <li class="have"><a href="#">Download Brochure</a></li>
+                 </ul>
+                  <ul>
                         <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
                         <img class="am" src="assets/img/amstor logo.svg" alt="">
                         <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="product.html">Products</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="service.html">Services</a></li>
+                        <div class="hideonmobile">
+                            <div class="subnav">
+                                <li  class="subnavbtn"><a class="menu-link" href="product.html">products</a></li>
+                                <div class="subnav-content">
+                                    <a href="product1.html"> product1</a>
+                                    <a href="product2.html"> product2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hideonmobile">
+                            <div class="subnav">
+                                <li  class="subnavbtn"><a class="menu-link" href="service.html">Service</a></li>
+                                <div class="subnav-content">
+                                    <a href="service1.html"> service1 </a>
+                                    <a href="service2.html"> service2</a>
+                                    <a href="service3.html"> service3</a>
+                                    <a href="service4.html"> service4</a>
+                                </div>
+                            </div>
+                        </div>
                         <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
                         <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
                         <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
@@ -47,6 +65,69 @@
                     </ul>   
             </div>
         </nav>
+    </header>
+
+        <style>
+             .subnav {
+            position: relative;
+            display: inline-block;
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .subnav-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .subnav-content a:hover {
+            background-color: #ddd;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        /* Animation for service1 */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .service1-animation {
+            animation: slideInFromLeft 0.5s ease-out;
+        }
+
+        /* Animation for service2 */
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .service2-animation {
+            animation: slideInFromBottom 0.5s ease-out;
+        }
+        </style>
         <script>
             function showsidebar(){
                 const sidebar = document.querySelector('.sidebar')
@@ -60,7 +141,6 @@
     
     
         </script>
-    </header>
     
     <section class="main-sec section-overlay">
         <div class="heading">

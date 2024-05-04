@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amstor le-health</title>
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/lehealth.css">
+    <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Fira+Sans:ital,wght@0,100;0,400;1,400&amp;family=IBM+Plex+Sans&amp;family=Raleway:wght@100&amp;display=swap" rel="stylesheet">
-    
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/57c218bfa9.js" crossorigin="anonymous"></script>
+<body>
 <body>
     <header>
         <nav class="nav_1">
@@ -21,8 +26,43 @@
                         <i onclick=hidesidebar() id="mmm"  style="width:2rem; color: orangered;margin-top: 2rem;">X</i>
                         <img src="assets/img/amstor logo.svg" alt="">
                         </div>
-                        <li class="menu-item"><a class="menu-link" href="aboutus.html">aboutus</a></li>
-                        <li class="menu-item"><a class="menu-link" href="Product.html">Products</a></li>
+                        <li class="menu-item"><a class="menu-link" href="aboutus.html">about us</a></li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="Product.html">Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="product1.html">product1 </a></li>
+                                <li><a href="product2.html">product2 </a></li>
+                            </ul>
+                        </li>
+                        <style>
+                            .menu-link {
+                                 
+                                 display: block;
+                             }
+                             .sub-menu{  
+                                 display: none;
+                                 position: relative;
+                                 bottom: 3rem;
+                                 left: 6rem;
+                                 background-color: #f9f9f9;
+                                 min-width: 120px;
+                                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                             }
+                             .menu-item:hover .sub-menu{
+                                 display: block;
+                             }
+                             .sub-menu li {
+                                 display: block;
+                             }
+                             .sub-menu li a {
+                                 color: black;
+                                 padding: 10px;
+                                 text-decoration: none;
+                             }
+                             .sub-menu li a:hover {
+                                 background-color: #ddd;
+                             }
+                         </style>
                         <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
                         <li class="menu-item"><a class="menu-link" href="ourteam.html">Our team</a></li>
                         <li class="menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
@@ -33,44 +73,136 @@
                     <ul>
                         <i onclick=showsidebar() id="menu-button" style="color: orangered;" class="fa-solid fa-bars" ></i>
                         <img class="am" src="assets/img/amstor logo.svg" alt="">
-                        <li class="hideonmobile"><a class="menu-link" href="aboutus.html">Aboutus</a></li>
-                        <li class="hideonmobile"><a class="menu-link" href="product.html">Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="service.html">Services</a></li>
+                        <li class="hideonmobile"><a class="menu-link" href="aboutus.html">About us</a></li>
+                        <div class="hideonmobile">
+                            <div class="subnav">
+                                <li  class="subnavbtn"><a class="menu-link" href="product.html">products</a></li>
+                                <div class="subnav-content">
+                                    <a href="product1.html"> product1</a>
+                                    <a href="product2.html"> product2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hideonmobile">
+                            <div class="subnav">
+                                <li  class="subnavbtn"><a class="menu-link" href="service.html">Service</a></li>
+                                <div class="subnav-content">
+                                    <!-- <a href="service.html"> service </a> -->
+                                    <a href="service1.html"> service1 </a>
+                                    <a href="service2.html"> service2</a>
+                                    <a href="service3.html"> service3</a>
+                                    <a href="service4.html"> service4</a>
+                                </div>
+                            </div>
+                        </div>
                         <li class="hideonmobile"><a class="menu-link" href="ourteam.html">Our team</a></li>
                         <li class="hideonmobile"><a class="menu-link" href="blog.html">Blog</a></li>
                         <li class="hideonmobile"><a class="menu-link" href="career.html">career</a></li>
                         <li class="hideonmobile"><a class="menu-link" href="contact us.html">contact us</a></li>
                         <li class="kerala"><a href="#">Download Brochure</a></li>
-                    </ul>
-                    
+                    </ul>   
             </div>
         </nav>
     </header>
+
+        <style>
+             .subnav {
+            position: relative;
+            display: inline-block;
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .subnav-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .subnav-content a:hover {
+            background-color: #ddd;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        /* Animation for service1 */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .service1-animation {
+            animation: slideInFromLeft 0.5s ease-out;
+        }
+
+        /* Animation for service2 */
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .service2-animation {
+            animation: slideInFromBottom 0.5s ease-out;
+        }
+        </style>
+        <script>
+            function showsidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+    
+            }
+    
+        </script>
     <section>
-        <img class="bore" src="assets/img/Frame 672 (2).png" alt="" width="1510px">
+        <img class="bore" src="assets/img/Frame 672 (2).png" alt="" width="1700px">
+    </section>
+    <section>
+        <div class="lehealth">
+            <div class="lehealth1">
+                <h3>LeHealth Enterprise Clinic Management System</h3>
+                <p>“A fully Integrated Web-based Application for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
+                <div class="lehealth2" >
+                    <p id="lehealth3">LeHealth Provides a complete operations management solution for small, medium and large level Poly clinics, Medical centers, Medical Laboratories & Diagnostic Centres. The Centralized architecture of the software allows healthcare management team to handle single or multichain facilities easy and effective.</p>
+                    <p>LeHealth Enterprise is a fully integrated, advanced web-based healthcare information system (EMR System), specifically designed to manage the complete operations of Polyclinics and Medical Centers. LeHealth offers an unmatched flexibility to choose and customize the operational requirements of the healthcare facilities based on the current and future requirements. Latest and advanced user interface of the system offers best experience and support to the users to manage their day-to-day operations easy and effective, hence assuring the best patient experience and satisfaction.
+                        LeHealth Enterprise solution offers best in class centralized clinic management system for small, medium and large level single or multichain enterprises.</p>
+                </div>
+                <div>
+                    <img  src="assets/img/Frame 761.png" alt=""  width="1700px">
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <div>
-            <div class="lehealth">
-                <div class="lehealth1">
-                    <h2>LeHealth Enterprise Clinic Management System</h2>
-                    <p>“A fully Integrated Web-based Application for managing all types of Medical Clinics and <br> Medical Centers in UAE & GCC Countries”.</p>
-                </div>
-            </div>
-            <div  class="lehealth2">
-                <p class="lehealth3">LeHealth Provides a complete operations management solution for small, medium and large level Poly clinics, Medical centers, Medical Laboratories & Diagnostic Centres. The Centralized architecture of the software allows healthcare management team to handle single or multichain facilities easy and effective.</p>
-                <p class="fon">LeHealth Enterprise is a fully integrated, advanced web-based healthcare information system (EMR System), specifically designed to manage the complete operations of Polyclinics and Medical Centers. LeHealth offers an unmatched flexibility to choose and customize the operational requirements of the healthcare facilities based on the current and future requirements. Latest and advanced user interface of the system offers best experience and support to the users to manage their day-to-day operations easy and effective, hence assuring the best patient experience and satisfaction.
-                    LeHealth Enterprise solution offers best in class centralized clinic management system for small, medium and large level single or multichain enterprises.</p>
-            </div>
-            <div>
-                <img class="bore1" src="assets/img/Frame 761.png" alt="" height="500px" width="1510px">
-            </div>
-        </div>
-        <div>
             <div>
                 <div class="lehealth4">
-                    <h4>About LeHealth Enterprise</h4>
-                    <p>LeHealth Enterprise offers an advanced complete operations management system for poly clinics and medical centers in Dubai, Abu Dhabi, Al Ain, Sharjah, Ajman, Ras Al Khaimah, Fujairah, UAE and other GCC countries. The web-based application offers flexible option to choose the deployment method of the system asper customer choice of interest (On-premise server or cloud serve deployment). The Modular structure of the system allows the facilities to select the features and functionalities based on their specialties and requirements.</p>
+                    <h4 id="abv">About LeHealth Enterprise</h4>
+                    <p style="font-size: 12;">LeHealth Enterprise offers an advanced complete operations management system for poly clinics and medical centers in Dubai, Abu Dhabi, Al Ain, Sharjah, Ajman, Ras Al Khaimah, Fujairah, UAE and other GCC countries. The web-based application offers flexible option to choose the deployment method of the system asper customer choice of interest (On-premise server or cloud serve deployment). The Modular structure of the system allows the facilities to select the features and functionalities based on their specialties and requirements.</p>
                 </div>
             </div>
             <div class="lehealth5">
@@ -85,8 +217,12 @@
                         <p>LeHealth Enterprise Clinic Management Solution with 20+ years of proven record, our expertise in the healthcare industry and experienced pool of technical experts, delivers to healthcare facilities to achieve the industry benchmarked work flows to streamline their operations and always giving the management to experience complete control and visibility of the business. Our main offerings address all the operational requirements of the Poly Clinics and Medical Centers. All our offerings (modules) are fully integrated with each other and serve as a standalone solution. Also, we carries immense competence in product customization and integration with 3rd party applications/web portals/PACS system Integration/Lab-machine interfacing for lab test auto report generation.</p>
                     </div>
                 </div>
-                <div>
-                    <img class="lehealth7" src="assets/img/Golden-Badge-PNG-Image-Background 1.png" alt="" height="500px" width="500px">
+                <div class="lehealth7">
+                    <img  src="assets/img/Golden-Badge-PNG-Image-Background 1.png" alt="" height="500px" width="500px">
+                    <div class="leeee_1">
+                        <img src="./assets/img/20+.png" alt="">
+                        <img src="/assets/img/years.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,60 +272,6 @@
         <div id="lehealth15">
             <div class="lehealth13">
                 <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-1.png" alt="">
-                        <div class="lehealth16">
-                        <h4>Appointment Scheduling</h4>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Appointment Scheduling</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Advanced Slot Booking Calendar</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Easy & Fater Patient Search</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Comprehensive Dashboard</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>SMS/Email Notification</p>
-                    </div>
-                </div>
-                <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-3.png" alt="">
-                    <div id="lehealth16">
-                        <h4>Patient Registration</h4>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Central Patient Records</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>EID card Reader Integration for Data <br> Auto Fetching</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Unlimited Document Attachments</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Patient Insurance Tracking</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Patient Arrival Notification to Doctors</p>
-                    </div>
-                </div>
-                <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213.png" alt="">
-                    <div class="lehealth16">
-                        <h4>Nurses Work Desk</h4>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Advanced Patient Dashboard</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Patient Vitals Collection</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>List of service/Procedure order from Doctors</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Service/Procedure status Entry</p>
-                        <img src="assets/img/Vector.png" alt="">
-                        <p>Item Consumption Tracking</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <section>
-        <div id="lehealth15">
-            <div class="lehealth13">
-
-                <div class="lehealth14">
                     <img src="assets/img/Rectangle 213-123.png" alt="">
                         <div class="lehealth16">
                         <h4>Appointment Scheduling</h4>
@@ -220,7 +302,7 @@
                         <img src="assets/img/Vector.png" alt="">
                         <p>Patient Arrival Notification to Doctors</p>
                     </div>
-                </div>
+                </div>  
                 <div class="lehealth14">
                     <img src="assets/img/Rectangle 213-244.png" alt="">
                     <div class="lehealth16">
@@ -238,9 +320,9 @@
                     </div>
                 </div>
             </div>
-            <div id="lehealth17">
+            <div id="lehealth17" class="lehealth17">
                <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-4.png">
+                    <img src="assets/img/Rectangle 213 (8).png">
                         <div class="lehealth16">
                         <h4>Doctors Work Desk</h4>
                         <img src="assets/img/Vector.png" alt="">
@@ -258,7 +340,7 @@
                     </div>
                 </div>
                 <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-1.png" alt="">
+                    <img src="assets/img/Rectangle 213 (2).png" alt="">
                     <div id="lehealth16">
                         <h4>Laboratory Management</h4>
                         <img src="assets/img/Vector.png" alt="">
@@ -280,7 +362,7 @@
                     </div>
                 </div>
                 <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-2.png" alt="">
+                    <img src="assets/img/Rectangle 213 (3).png" alt="">
                     <div class="lehealth16">
                         <h4>Radiology Management</h4>
                         <img src="assets/img/Vector.png" alt="">
@@ -300,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            <div id="lehealth17">
+            <div id="lehealth17" class="lehealth17">
                 <div class="lehealth14">
                      <img src="assets/img/Rectangle 213.png">
                          <div class="lehealth16">
@@ -338,27 +420,27 @@
                  <div class="lehealth14">
                      <img src="assets/img/Rectangle 213-2.png" alt="">
                      <div class="lehealth16">
-                         <h4>Radiology Management</h4>
+                         <h4>Billing Management</h4>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Radiology Order</p>
+                         <p>Advanced Dashboard for Cashier.</p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Radiology Result Enty</p>
+                         <p>VAT Compliant </p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>PACS integration</p>
+                         <p>Patient Billing – Cash, Card, Cheque, <br> Company account and Patient account</p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Image attachment</p>
+                         <p>Patient Insurance Billing</p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Radiology Test Result Publishing</p>
+                         <p>Advanced Discount management</p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Flexible Result Templates</p>
+                         <p>Package utilization-based billing.</p>
                          <img src="assets/img/Vector.png" alt="">
-                         <p>Order Status Tracking</p>               
+                         <p>Daily collection Tracking</p>               
                      </div>
                  </div>
              </div>
-             <div id="lehealth17">
+             <div id="lehealth17" class="lehealth17">
                  <div class="lehealth14">
-                     <img src="assets/img/Rectangle 213-1.png" alt="">
+                     <img src="assets/img/Rectangle 213-3.png" alt="">
                      <div id="lehealth16">
                          <h4>Inventory Management </h4>
                          <img src="assets/img/Vector.png" alt="">
@@ -377,7 +459,7 @@
                          <p>Stock Monitoring.</p>
                      </div>
                  </div>
-                 <div class="lehealth14">
+                 <div class="lehealth14"  >
                      <img src="assets/img/Rectangle 213-4.png" alt="">
                      <div class="lehealth16">
                          <h4>Radiology Management</h4>
@@ -398,7 +480,7 @@
                      </div>
                  </div>
                  <div class="lehealth14">
-                    <img src="assets/img/Rectangle 213-5.png.png" alt="">
+                    <img src="assets/img/Rectangle 213-5.png" alt="">
                     <div class="lehealth16">
                         <h4>MIS Reports</h4>
                         <img src="assets/img/Vector.png" alt="">
@@ -488,20 +570,5 @@
     </footer> 
 
 
-
-
-    <script>
-        function showsidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hidesidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-
-        }
-
-
-    </script>
     </body>
     </html>
